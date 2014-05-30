@@ -1,5 +1,5 @@
 ---
-tags: html elements, css styling, css selectors, importing stylesheets, kids
+tags: html elements, css styling, css selectors, importing stylesheets, inheritance, kids
 languages: html, css
 ---
 #My Little Rainbow
@@ -26,7 +26,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
   - Elements next to one another are siblings
 
 Here's and example of element relations:
-```
+```html
   <div>  <!-- the parent element -->
     <p></p>  <!-- the first sibling element/the first child-->
     <p></p>  <!-- the second sibling element/the second child -->
@@ -46,7 +46,7 @@ Cascading Style Sheets, or CSS, is language created to style an HTML document by
   - to select multiple different elements seperate them by commas like this `div, p, a`
 
 Here's an example of CSS styling:
-```
+```css
   * {
     color: red;  /* color in CSS refers to font color */
   }  /* all elements will have red font */
@@ -61,7 +61,7 @@ In that dir you'll see three files. `index.html`, `main.css`, and this `README.m
 If you use the inspector or look at the file in Sublime, you'll that the basic file stucture is there.  So why can't we see anything?!?1?  That's because the divs have no styling on them right now.  And that's because we never told the browser to inlcude a CSS file that would apply any styles. 
 
 Let's fix this by adding the stylesheet to the `head` like so,
-```
+```html
   <head>
   ... 
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -86,4 +86,22 @@ Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colo
 
 Hex colors can be shortened to just three numbers since each RGB value is the same for each digit. So `#11dd99` can be written as `#1d9`.
 
-To get roygbiv onto our rainbow we'll need 
+####Coloring the Rainbow
+To get roygbiv onto our rainbow we'll need need seven hex colors.
+Red: `#f00`; Orange: `#ffa500`; Yellow: `#ff0`; Green: `#00bc3f`; Blue: `#06f`; Indigo: `#8a2be2`; Violet: `#d300c9`
+
+With those colors all we have to do next is select each div individually.  That is a perfect use for ids since they're meant to style one specific element only.  So that means we'll need to add an id for each div, so a logical name for each div would be the color that they have to be.  It could be something random, but good names make for semantic code. So lets give the outer most div the id red. We'll do this like so.
+```html
+  <div id='red'>
+    ...
+  </div>
+```
+
+And to give that id some CSS attributes we'll go into `main.css`, select the id, and mark its color as red like this.
+```css
+  #red { /* this selects any elements with the red id */
+    color: #f00;
+  }
+```
+
+If you refresh the page now all the divs will be red.  That's because even though we only selected one div all of that divs children will inherit the styles of the parent.  This is what is known as inheritance, and because the children divs have no color specific to themselves they default to the color of their parent.  So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
