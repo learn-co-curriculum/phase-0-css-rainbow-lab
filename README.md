@@ -1,14 +1,16 @@
 ---
-tags: html elements, css styling, css selectors, importing stylesheets
+tags: html elements, css styling, css selectors, importing stylesheets, kids
 languages: html, css
 ---
 #My Little Rainbow
 In this tutorial we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about html elements, css styling, css selectors, how color works in css, and importing stylesheets.  That might sound like a lot but it isn't.
 
+Before we start here's some basic info about HTML and CSS, skip it to [Making a Rainbow]() if you feel comfortable enough with HTML and CSS.
+
 ##HTML Basics
 Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has it's own special conotation that the browser uses to make _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
 
-Elements
+####Elements
   - All begin with `<` and end with `>` ex. `<div>` (this last part is a tag)
   - Most have an opening tag such as `<div>` and a closing tag `</div>`
     - The `/` indicates to the browser that that tag is a closing tag
@@ -34,7 +36,7 @@ Here's and example of element relations:
 ## CSS Basics
 Cascading Style Sheets, or CSS, is language created to style an HTML document by telling the browser how specific elements should look. CSS does this by selecting elments based on their tag, ids, classes, or all of the above. The reason for CSS is the seperation of concerns. We want HTML only to be concerned with how it displays and demarcates information, and we let CSS worry about how to make that information look pretty.
 
-CSS selectors
+####CSS selectors
   - Selects elements to assign them styles
   - `*` (wildcard) selects every element
   - An element, such as `div` will select all elements of that type
@@ -46,6 +48,42 @@ CSS selectors
 Here's an example of CSS styling:
 ```
   * {
-    color: red;  /* all elements will have red font */
-  }
+    color: red;  /* color in CSS refers to font color */
+  }  /* all elements will have red font */
 ```
+
+##Making a Rainbow
+First off make sure you have [forked](https://github.com/flatiron-school-curriculum/my-little-rainbow/fork) and cloned this repo. Next, create a new branch, and switch to it; it's `git checkout -b your_solution_branch_name` in case you forgot.
+
+In that dir you'll see three files. `index.html`, `main.css`, and this `README.md`.  Open them in sublime via `subl .` in your command line.  Also open `index.html` in your browser; if everything is working correctly you should see a white page. Good job!
+
+###Making the Divs Visible
+If you use the inspector or look at the file in Sublime, you'll that the basic file stucture is there.  So why can't we see anything?!?1?  That's because the divs have no styling on them right now.  And that's because we never told the browser to inlcude a CSS file that would apply any styles. 
+
+Let's fix this by adding the stylesheet to the `head` like so,
+```
+  <head>
+  ... 
+    <link rel="stylesheet" type="text/css" href="main.css">
+  ...
+  </head>
+```
+Link is a self closing tag that will creates a relative path with the `href` attribute.  A relative path means the browser knows that the `main.css` file is in the same place as `index.html`.  The `head` is a hidden part of the page that tells the browser where to find any other files it needs to display the page correctly, the `title` for the tab, and any other possible important information.
+
+Now if you refresh the `index.html` page in your browser you should see an ugly black rainbow.  [Gerd Jerb!](http://cdn.memegenerator.net/instances/500x/23902661.jpg)
+
+Okay so we got the basic outline because the in `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and just any set of numbers but numbers with base pair of 16 rather than base pair of 10 like use every day.  These numbers are called hexadecimals and we can use them to make colors.
+
+####Some stuff you should know about hex colors (and web colors in general).
+Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visual what I mean by this.
+
+```
+  Decimal Numbers:      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+  Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a,  b,  c,  d,  e,  f,  10
+```
+
+Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colors are on a scale of 0 to 255 for each three colors in the spectrum.  Hex colors are considered true colors since it can represent ~16 million colors, but don't worry your eye can only see 10 million of those.  So `#000000` translates to black since it 0 reds, 0 green, 0 blues represents the absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the most every color equally.  
+
+Hex colors can be shortened to just three numbers since each RGB value is the same for each digit. So `#11dd99` can be written as `#1d9`.
+
+To get roygbiv onto our rainbow we'll need 
