@@ -15,7 +15,6 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
   - Most have an opening tag such as `<div>` and a closing tag `</div>`
     - The `/` indicates to the browser that that tag is a closing tag
     - The element is everything between the tags and the tags themselves
-    - Closing tags are very important! Here's a [website]() that has no closing tags. Don't do that!
   - Some tags are self closing like the line break element `<br/>`, which has the `/` to signify that it is self closing.
   - Elements can have IDs and classes to aid the browser in finding specific tags.
     - Must begin with a letter A-Z or a-z
@@ -23,7 +22,10 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
     - IDs __can__ only be used once per page. ex: `<div id="this-special-div"></div>`
     - Classes can be used as many times as you want. ex: `<div classes="a-less-special-div"></div>`
   - Elements nested inside other elements are called children
+    - Children inherit attributes fromt their parents.
+    - Dont' nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
   - Elements next to one another are siblings
+    - Siblings do not inherit from one another, but are important for selecting in CSS
 
 Here's and example of element relations:
 ```html
