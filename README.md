@@ -50,7 +50,7 @@ Cascading Style Sheets, or CSS, is language created to style an HTML document by
 Here's an example of CSS styling:
 ```css
   * {
-    color: red;  /* color in CSS refers to font color */
+    border-top-color: red;  /* color in CSS refers to font color */
   }  /* all elements will have red font */
 ```
 
