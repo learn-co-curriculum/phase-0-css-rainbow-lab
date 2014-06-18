@@ -102,7 +102,7 @@ With those colors all we have to do next is select each div individually.  That 
 And to give that id some CSS attributes we'll go into `main.css`, select the id, and mark its color as red like this.
 ```css
   #red { /* this selects any elements with the red id */
-    color: #f00;
+    border-top-color: #f00;
   }
 ```
 
