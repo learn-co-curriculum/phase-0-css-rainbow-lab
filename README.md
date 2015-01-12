@@ -15,7 +15,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
   - Most have an opening tag such as `<div>` and a closing tag `</div>`
     - The `/` indicates to the browser that that tag is a closing tag
     - The element is everything between the tags and the tags themselves
-  - Some tags are self closing like the line break element `<br/>`, which has the `/` to signify that it is self closing.
+  - Some tags are self closing like the line break element `<br>`.
   - Elements can have IDs and classes to aid the browser in finding specific tags.
     - Must begin with a letter A-Z or a-z
     - Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")
@@ -94,7 +94,7 @@ Red: `#f00`; Orange: `#ffa500`; Yellow: `#ff0`; Green: `#00bc3f`; Blue: `#06f`; 
 
 With those colors all we have to do next is select each div individually.  That is a perfect use for ids since they're meant to style one specific element only.  So that means we'll need to add an id for each div, so a logical name for each div would be the color that they have to be.  It could be something random, but good names make for semantic code. So lets give the outer most div the id red. We'll do this like so.
 ```html
-  <div id='red'>
+  <div id="red">
     ...
   </div>
 ```
