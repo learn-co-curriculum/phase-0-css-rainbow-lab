@@ -27,7 +27,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
   - Elements next to one another are siblings
     - Siblings do not inherit from one another, but are important for selecting in CSS
 
-Here's and example of element relations:
+Here is an example of element relations:
 ```html
   <div>  <!-- the parent element -->
     <p></p>  <!-- the first sibling element/the first child-->
