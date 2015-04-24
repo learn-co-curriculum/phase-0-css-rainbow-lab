@@ -55,7 +55,7 @@ Here's an example of CSS styling:
 ```
 
 ##Making a Rainbow
-First off make sure you have [forked](https://github.com/flatiron-school-curriculum/my-little-rainbow/fork) and cloned this repo. Next, create a new branch, and switch to it; it's `git checkout -b your_solution_branch_name` in case you forgot.
+First off make sure you have [forked](https://github.com/learn-co-curriculum/my-little-rainbow/fork) and cloned this repo. Next, create a new branch, and switch to it; it's `git checkout -b your_solution_branch_name` in case you forgot.
 
 In that dir you'll see three files. `index.html`, `main.css`, and this `README.md`.  Open them in sublime via `subl .` in your command line.  Also open `index.html` in your browser; if everything is working correctly you should see a white page. Good job!
 
