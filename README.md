@@ -1,4 +1,3 @@
-
 #My Little Rainbow
 In this tutorial we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about html elements, css styling, css selectors, how color works in css, and importing stylesheets.  That might sound like a lot but it isn't.
 
@@ -20,7 +19,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
     - Classes can be used as many times as you want. ex: `<div classes="a-less-special-div"></div>`
   - Elements nested inside other elements are called children
     - Children inherit attributes fromt their parents.
-    - Dont' nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
+    - Don't nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
   - Elements next to one another are siblings
     - Siblings do not inherit from one another, but are important for selecting in CSS
 
