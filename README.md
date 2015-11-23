@@ -102,4 +102,4 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
   }
 ```
 
-If you refresh the page now all the divs will be red.  That's because even though we only selected one div, all of that divs children will inherit the styles of the parent.  This is what is known as inheritance, and because the children divs have no color specific to themselves, they default to the color of their parent.  So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
