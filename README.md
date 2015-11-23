@@ -70,7 +70,7 @@ Link is a self closing tag that will creates a relative path with the `href` att
 
 Now if you refresh the `index.html` page in your browser you should see an ugly black rainbow.  [Gerd Jerb!](http://cdn.memegenerator.net/instances/500x/23902661.jpg)
 
-Okay so we got the basic outline because the in `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and just any set of numbers but numbers with base pair of 16 rather than base pair of 10 like use every day.  These numbers are called hexadecimals and we can use them to make colors.
+Okay so we got the basic outline because the in `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and not just any set of numbers, but numbers with base pair of 16 rather than base pair of 10 like use every day.  These numbers are called hexadecimals and we can use them to make colors.
 
 ####Some stuff you should know about hex colors (and web colors in general).
 Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visualize what I mean by this.
