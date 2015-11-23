@@ -73,14 +73,14 @@ Now if you refresh the `index.html` page in your browser you should see an ugly 
 Okay so we got the basic outline because the in `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and just any set of numbers but numbers with base pair of 16 rather than base pair of 10 like use every day.  These numbers are called hexadecimals and we can use them to make colors.
 
 ####Some stuff you should know about hex colors (and web colors in general).
-Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visual what I mean by this.
+Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visualize what I mean by this.
 
 ```
   Decimal Numbers:      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
   Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a,  b,  c,  d,  e,  f,  10
 ```
 
-Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colors are on a scale of 0 to 255 for each three colors in the spectrum.  Hex colors are considered true colors since it can represent ~16 million colors, but don't worry your eye can only see 10 million of those.  So `#000000` translates to black since it 0 reds, 0 green, 0 blues represents the absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the most every color equally.  
+Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colors are on a scale of 0 to 255 for each three colors in the spectrum.  Hex colors are considered true colors since it can represent ~16 million colors, but don't worry your eye can only see 10 million of those.  So `#000000` translates to black since 0 reds, 0 green, 0 blues represents the absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the maximum of each of the colors.  
 
 Hex colors can be shortened to just three numbers since each RGB value is the same for each digit. So `#11dd99` can be written as `#1d9`.
 
@@ -102,4 +102,4 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
   }
 ```
 
-If you refresh the page now all the divs will be red.  That's because even though we only selected one div all of that divs children will inherit the styles of the parent.  This is what is known as inheritance, and because the children divs have no color specific to themselves they default to the color of their parent.  So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+If you refresh the page now all the divs will be red.  That's because even though we only selected one div, all of that divs children will inherit the styles of the parent.  This is what is known as inheritance, and because the children divs have no color specific to themselves, they default to the color of their parent.  So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
