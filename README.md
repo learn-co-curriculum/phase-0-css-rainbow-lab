@@ -18,7 +18,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
     - IDs __can__ only be used once per page. ex: `<div id="this-special-div"></div>`
     - Classes can be used as many times as you want. ex: `<div classes="a-less-special-div"></div>`
   - Elements nested inside other elements are called children
-    - Children inherit attributes fromt their parents.
+    - Children inherit attributes from their parents.
     - Don't nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
   - Elements next to one another are siblings
     - Siblings do not inherit from one another, but are important for selecting in CSS
