@@ -103,3 +103,5 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
 ```
 
 So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+
+<a href='https://learn.co/lessons/my-little-rainbow' data-visibility='hidden'>View this lesson on Learn.co</a>
