@@ -1,10 +1,10 @@
 #My Little Rainbow
 In this tutorial we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about HTML elements, CSS styling, CSS selectors, how color works in CSS, and importing stylesheets.  That might sound like a lot but it isn't.
 
-Before we start here's some basic info about HTML and CSS, skip it to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
+Before we start here's some basic info about HTML and CSS, skip to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
 
 ##HTML Basics
-Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has it's own special connotation that the browser uses to make _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
+Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has it's own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
 
 ####Elements
   - All begin with `<` and end with `>` ex. `<div>` (this last part is a tag)
@@ -16,7 +16,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
     - Must begin with a letter A-Z or a-z
     - Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")
     - IDs __can__ only be used once per page. ex: `<div id="this-special-div"></div>`
-    - Classes can be used as many times as you want. ex: `<div classes="a-less-special-div"></div>`
+    - Classes can be used as many times as you want. ex: `<div class="a-less-special-div"></div>`
   - Elements nested inside other elements are called children
     - Children inherit attributes from their parents.
     - Don't nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
