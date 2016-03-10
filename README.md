@@ -41,7 +41,7 @@ Cascading Style Sheets, or CSS, is a language created to style an HTML document 
   - Select an id like so `#some-id`
   - Classes are selected like this `.some-class`
   - To select all children elements of a parent do something like this `div p`
-  - to select multiple different elements seperate them by commas like this `div, p, a`
+  - to select multiple different elements separate them by commas like this `div, p, a`
 
 Here's an example of CSS styling:
 ```css
@@ -105,3 +105,5 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
 So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow' title='My Little Rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
