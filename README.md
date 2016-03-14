@@ -1,27 +1,27 @@
 #My Little Rainbow
-In this tutorial we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about HTML elements, CSS styling, CSS selectors, how color works in CSS, and importing stylesheets.  That might sound like a lot but it isn't.
+In this lab, we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about HTML elements, CSS styling, CSS selectors, how color works in CSS, and importing stylesheets.  That might sound like a lot but it isn't.
 
 Before we start here's some basic info about HTML and CSS, skip to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
 
 ##HTML Basics
-Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has it's own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
+Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has its own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
 
 ####Elements
-  - All begin with `<` and end with `>` ex. `<div>` (this last part is a tag)
-  - Most have an opening tag such as `<div>` and a closing tag `</div>`
-    - The `/` indicates to the browser that that tag is a closing tag
-    - The element is everything between the tags and the tags themselves
+  - All begin with `<` and end with `>` ex. `<div>` (this last part is a tag).
+  - Most have an opening tag such as `<div>` and a closing tag `</div>`.
+    - The `/` indicates to the browser that that tag is a closing tag.
+    - The element is everything between the tags and the tags themselves.
   - Some tags are self closing like the line break element `<br>`.
   - Elements can have IDs and classes to aid the browser in finding specific tags.
-    - Must begin with a letter A-Z or a-z
-    - Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")
-    - IDs __can__ only be used once per page. ex: `<div id="this-special-div"></div>`
-    - Classes can be used as many times as you want. ex: `<div class="a-less-special-div"></div>`
-  - Elements nested inside other elements are called children
+    - Must begin with a letter A-Z or a-z.
+    - Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_").
+    - IDs __can__ only be used once per page. ex: `<div id="this-special-div"></div>`.
+    - Classes can be used as many times as you want. ex: `<div class="a-less-special-div"></div>`.
+  - Elements nested inside other elements are called children.
     - Children inherit attributes from their parents.
     - Don't nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
-  - Elements next to one another are siblings
-    - Siblings do not inherit from one another, but are important for selecting in CSS
+  - Elements next to one another are siblings.
+    - Siblings do not inherit from one another, but are important for selecting in CSS.
 
 Here is an example of element relations:
 ```html
@@ -35,13 +35,13 @@ Here is an example of element relations:
 Cascading Style Sheets, or CSS, is a language created to style an HTML document by telling the browser how specific elements should look. CSS does this by selecting elements based on their tag, ids, classes, or all of the above. The reason for CSS is the separation of concerns. We want HTML only to be concerned with how it displays and demarcates information, and we let CSS worry about how to make that information look pretty.
 
 ####CSS selectors
-  - Selects elements to assign them styles
-  - `*` (wildcard) selects every element
-  - An element, such as `div` will select all elements of that type
-  - Select an id like so `#some-id`
+  - They select elements to assign them styles.
+  - `*` (wildcard) selects every element.
+  - An element, such as `div`, will select all elements of that type.
+  - They select an id like `#some-id`
   - Classes are selected like this `.some-class`
   - To select all children elements of a parent do something like this `div p`
-  - to select multiple different elements separate them by commas like this `div, p, a`
+  - To select multiple different elements separate them by commas like this `div, p, a`
 
 Here's an example of CSS styling:
 ```css
@@ -53,7 +53,7 @@ Here's an example of CSS styling:
 ##Making a Rainbow
 First off make sure you have [forked](https://github.com/learn-co-students/my-little-rainbow-v-000) and cloned this repo. Next, create a new branch, and switch to it; it's `git checkout -b your_solution_branch_name` in case you forgot.
 
-In that dir you'll see three files. `index.html`, `main.css`, and this `README.md`.  Open them in your text editor via your command line.  Also open `index.html` in your browser; if everything is working correctly you should see a white page. Good job!
+In that directory you'll see three files. `index.html`, `main.css`, and this `README.md`.  Open them in your text editor via your command line.  Also open `index.html` in your browser; if everything is working correctly you should see a white page. Good job!
 
 ###Making the Divs Visible
 If you use the inspector or look at the file in your text editor, you'll see that the basic file stucture is there.  So why can't we see anything?!?!?  That's because the divs have no styling on them right now.  And that's because we never told the browser to include a CSS file that would apply any styles. 
@@ -72,15 +72,15 @@ Now if you refresh the `index.html` page in your browser you should see an ugly 
 
 Okay so we got the basic outline because in the `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and not just any set of numbers, but numbers with base pair of 16 rather than base pair of 10 like we use everyday.  These numbers are called hexadecimals and we can use them to make colors.
 
-####Some stuff you should know about hex colors (and web colors in general).
-Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visualize what I mean by this.
+####Some Stuff You Should Know About Hex Colors (and Web Colors in General).
+Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of these numbers are actually letters.  The lowest single digit number in hex is 0 and the highest single digit number is f.  This table might help to visualize what we mean by this.
 
 ```
   Decimal Numbers:      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
   Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a,  b,  c,  d,  e,  f,  10
 ```
 
-Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colors are on a scale of 0 to 255 for each three colors in the spectrum.  Hex colors are considered true colors since it can represent ~16 million colors, but don't worry your eye can only see 10 million of those.  So `#000000` translates to black since 0 reds, 0 green, 0 blues represents the absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the maximum of each of the colors.  
+Hex colors work by creating Red, Green, Blue (RGB) values.  Traditional RGB colors are on a scale of 0 to 255 for each of the three colors in the spectrum.  Hex colors are considered true colors since it can represent ~16 million colors, but your eye can only see 10 million of those.  So `#000000` translates to black since 0 reds, 0 green, 0 blues represents the absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the maximum of each of the colors.  
 
 Hex colors can be shortened to just three numbers since each RGB value is the same for each digit. So `#11dd99` can be written as `#1d9`.
 
