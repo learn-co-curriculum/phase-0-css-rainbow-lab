@@ -46,7 +46,7 @@ Cascading Style Sheets, or CSS, is a language created to style an HTML document 
 Here's an example of CSS styling:
 ```css
   * {
-    border-top-color: red;  /* color in CSS refers to font color */
+    color: red;  /* color in CSS refers to font color */
   }  /* all elements will have red font */
 ```
 
@@ -107,3 +107,5 @@ So to make sure the rainbow isn't so monochromatic you now need to repeat the ab
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow' title='My Little Rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
