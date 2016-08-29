@@ -19,7 +19,7 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
     - Classes can be used as many times as you want. ex: `<div class="a-less-special-div"></div>`.
   - Elements nested inside other elements are called children.
     - Children inherit attributes from their parents.
-    - Don't nest everything. Here's a [website](http://sewingandembroiderywarehouse.com/embtrb.htm) that nested everything. Don't do that!
+    - Don't nest everything. 
   - Elements next to one another are siblings.
     - Siblings do not inherit from one another, but are important for selecting in CSS.
 
