@@ -1,7 +1,7 @@
 #My Little Rainbow
 In this lab, we're going to make a rainbow with HTML `<div>` elements. And while we do it we're going to learn about HTML elements, CSS styling, CSS selectors, how color works in CSS, and importing stylesheets.  That might sound like a lot but it isn't.
 
-Before we start here's some basic info about HTML and CSS, skip to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
+Before we start, here's some basic info about HTML and CSS. Skip to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
 
 ##HTML Basics
 Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has its own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
@@ -105,3 +105,5 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
 So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow' title='My Little Rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
