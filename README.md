@@ -69,7 +69,7 @@ Let's fix this by adding the stylesheet to the `head` like so,
 ```
 Link is a self closing tag that will create a relative path with the `href` attribute.  A relative path means the browser knows that the `main.css` file is in the same place as `index.html`.  The `head` is a hidden part of the page that tells the browser where to find any other files it needs to display the page correctly, the `title` for the tab, and any other possible important information.
 
-Now if you refresh the `index.html` page in your browser you should see an ugly black rainbow.  [Gerd Jerb!](http://cdn.memegenerator.net/instances/500x/23902661.jpg)
+Now if you refresh the `index.html` page in your browser you should see an ugly black rainbow.  Gerd Jerb!
 
 Okay so we got the basic outline because in the `main.css` all the `div` elements were selected and styled, but the colors are wrong because the default border color is black.  To fix this we need to learn a little bit more about colors, because while we could just set `color: red;` we should learn how to make colors without words.  We should just use numbers, and not just any set of numbers, but numbers with base pair of 16 rather than base pair of 10 like we use everyday.  These numbers are called hexadecimals and we can use them to make colors.
 
@@ -105,4 +105,4 @@ And to give that id some CSS attributes we'll go into `main.css`, select the id,
 
 So to make sure the rainbow isn't so monochromatic you now need to repeat the above steps with the final six colors of the rainbow, and when you do you should have something like [this](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-little-rainbow' title='My Little Rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
