@@ -12,9 +12,9 @@ and CSS.
 
 ## Review HTML Basics
 
-Hyper Text Markup Language, or HTML, is a way to demarcate
-a document into different parts. Each part is _marked_ by elements (using tags).
-Each element has its own special connotation that the browser uses to _render_
+Hyper Text Markup Language, or HTML, is a way to structure a document with
+different parts. Each section of content is _marked_ by elements (using tags).
+Each element has its own special meaning that the browser uses to _render_
 the HTML document. Use this [cheat sheet](http://www.cril.univ-
 artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
 
@@ -47,12 +47,12 @@ Here is an example of element relations:
 
 ## Review CSS Basics
 
-Cascading Style Sheets, or CSS, is a language created to style an HTML document
-by telling the browser how specific elements should look. CSS does this by
+Cascading Style Sheets, or CSS, is a language created to style HTML documents by
+telling the browser how specific elements should look. CSS does this by
 selecting elements based on their tag, ids, classes, or all of the above. The
-reason for CSS is the separation of concerns. We want HTML only to be concerned
-with how it displays and demarcates information, and we let CSS worry about how
-to make that information appear clear and engaging.
+reason for CSS is the separation of concerns. We want HTML to focus on the
+structure and meaning of our content. We let CSS worry about how to make that
+information appear clear and engaging.
 
 ### CSS selectors
 
@@ -101,7 +101,7 @@ Let's fix this by adding the stylesheet to the `head`:
 </head>
 ```
 
-`Link` is a self closing tag that will create a relative path with the `href`
+`Link` is a self-closing tag that will create a relative path with the `href`
 attribute. A relative path means the browser knows that the `main.css` file is
 in the same place as `index.html`. The `head` is a hidden part of the page that
 tells the browser where to find any other files it needs to display the page
