@@ -6,7 +6,7 @@ In this lab, we're going to make a rainbow with HTML `<div>` elements. And while
 we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS, and importing stylesheets.
 
-Before we start, here's some basic info about HTML and CSS. Skip to 
+Before we start, here's some basic info about HTML and CSS. Skip to
 [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML
 and CSS.
 
@@ -14,9 +14,8 @@ and CSS.
 
 Hyper Text Markup Language, or HTML, is a way to structure a document with
 different parts. Each section of content is _marked_ by elements (using tags).
-Each element has its own special meaning that the browser uses to _render_
-the HTML document. Use this [cheat sheet](http://www.cril.univ-
-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
+Each element has its own special meaning that the browser uses to _render_ the
+HTML document. Use this [cheat sheet][] on HTML elements for guidance.
 
 ### Elements
 
@@ -32,7 +31,7 @@ artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
   + Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
   + Children inherit attributes from their parents.
-  + Don't nest everything. 
+  + Don't nest everything.
 - Elements next to one another are siblings.
   + Siblings do not inherit from one another, but are important for selecting in CSS.
 
@@ -74,20 +73,19 @@ Here's an example of CSS styling:
 
 ## Make a Rainbow
 
-First off make sure you have [forked](https://github.com/learn-co-students/my-
-little-rainbow-v-000) and cloned this repo. Next, create a new branch, and
-switch to it; it's `git checkout -b your_solution_branch_name` in case you
-forgot.
+In the directory you'll see three files: `index.html`, `main.css`, and this
+file, `README.md`. Start the web server using the `httpserver` command.  Using
+another tab in your browser, navigate to the "launched" web server and add
+`/index.html`. The URL should be something like `10.0.0.1:41234/index.html`.
 
-In that directory you'll see three files. `index.html`, `main.css`, and this
-`README.md`. Open them in your text editor via your command line. Also open
-`index.html` in your browser; if everything is working correctly you should see
-a white page. Good job!
+If everything is working correctly, you should see a white page.
+
+Good job!
 
 ### Making the Divs Visible
 
 If you use the inspector or look at the file in your text editor, you'll see
-that the basic file stucture is there. So why can't we see anything?
+that the basic file structure is there. So why can't we see anything?
 That's because the divs have no styling on them right now. And that's because
 we never told the browser to include a CSS file that would apply any styles.
 
@@ -95,7 +93,7 @@ Let's fix this by adding the stylesheet to the `head`:
 
 ```html
 <head>
-... 
+...
   <link rel="stylesheet" type="text/css" href="main.css">
 ...
 </head>
@@ -175,11 +173,18 @@ above steps with the final six colors, and when you do you should
 have [a complete, colorful rainbow](http://i0.kym-
 cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
+## Moving On
+
+When you're done with this lab type `learn` at the terminal. Make sure you pass
+the tests. Once they pass, type `learn submit` and you'll be ready to move on!
+
 ## Conclusion
 
 After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
 We linked our stylesheet to our HTML page and added ids to our HTML elements. We
-then created CSS rules, using hexidecimal color values, for those elements to
+then created CSS rules, using hexadecimal color values, for those elements to
 display all the colors on our completed HTML page.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+
+[cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
