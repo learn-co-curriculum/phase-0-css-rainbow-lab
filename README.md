@@ -85,7 +85,7 @@ Good job!
 ### Making the Divs Visible
 
 If you use the inspector or look at the file in your text editor, you'll see
-that the basic file stucture is there. So why can't we see anything?
+that the basic file structure is there. So why can't we see anything?
 That's because the divs have no styling on them right now. And that's because
 we never told the browser to include a CSS file that would apply any styles.
 
@@ -177,7 +177,7 @@ cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
 After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
 We linked our stylesheet to our HTML page and added ids to our HTML elements. We
-then created CSS rules, using hexidecimal color values, for those elements to
+then created CSS rules, using hexadecimal color values, for those elements to
 display all the colors on our completed HTML page.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
