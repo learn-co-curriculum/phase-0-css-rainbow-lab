@@ -183,4 +183,4 @@ display all the colors on our completed HTML page.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
 
-[cheat sheet]: http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf
+[cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
