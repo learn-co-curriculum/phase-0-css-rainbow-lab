@@ -173,6 +173,11 @@ above steps with the final six colors, and when you do you should
 have [a complete, colorful rainbow](http://i0.kym-
 cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
+## Moving On
+
+When you're done with this lab type `learn` at the terminal. Make sure you pass
+the tests. Once they pass, type `learn submit` and you'll be ready to move on!
+
 ## Conclusion
 
 After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
