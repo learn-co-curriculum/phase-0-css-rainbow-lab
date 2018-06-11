@@ -73,15 +73,14 @@ Here's an example of CSS styling:
 
 ## Make a Rainbow
 
-First off make sure you have [forked](https://github.com/learn-co-students/my-
-little-rainbow-v-000) and cloned this repo. Next, create a new branch, and
-switch to it; it's `git checkout -b your_solution_branch_name` in case you
-forgot.
+In the directory you'll see three files: `index.html`, `main.css`, and this
+file, `README.md`. Start the web server using the `httpserver` command.  Using
+another tab in your browser, navigate to the "launched" web server and add
+`/index.html`. The URL should be something like `10.0.0.1:41234/index.html`.
 
-In that directory you'll see three files. `index.html`, `main.css`, and this
-`README.md`. Open them in your text editor via your command line. Also open
-`index.html` in your browser; if everything is working correctly you should see
-a white page. Good job!
+If everything is working correctly, you should see a white page.
+
+Good job!
 
 ### Making the Divs Visible
 
