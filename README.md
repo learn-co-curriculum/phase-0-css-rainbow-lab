@@ -6,7 +6,7 @@ In this lab, we're going to make a rainbow with HTML `<div>` elements. And while
 we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS, and importing stylesheets.
 
-Before we start, here's some basic info about HTML and CSS. Skip to 
+Before we start, here's some basic info about HTML and CSS. Skip to
 [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML
 and CSS.
 
@@ -32,7 +32,7 @@ artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
   + Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
   + Children inherit attributes from their parents.
-  + Don't nest everything. 
+  + Don't nest everything.
 - Elements next to one another are siblings.
   + Siblings do not inherit from one another, but are important for selecting in CSS.
 
@@ -95,7 +95,7 @@ Let's fix this by adding the stylesheet to the `head`:
 
 ```html
 <head>
-... 
+...
   <link rel="stylesheet" type="text/css" href="main.css">
 ...
 </head>
