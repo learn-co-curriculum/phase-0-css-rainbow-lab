@@ -14,9 +14,8 @@ and CSS.
 
 Hyper Text Markup Language, or HTML, is a way to structure a document with
 different parts. Each section of content is _marked_ by elements (using tags).
-Each element has its own special meaning that the browser uses to _render_
-the HTML document. Use this [cheat sheet](http://www.cril.univ-
-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
+Each element has its own special meaning that the browser uses to _render_ the
+HTML document. Use this [cheat sheet][] on HTML elements for guidance.
 
 ### Elements
 
@@ -183,3 +182,5 @@ then created CSS rules, using hexidecimal color values, for those elements to
 display all the colors on our completed HTML page.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
+
+[cheat sheet]: http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf
