@@ -5,7 +5,7 @@ In this lab, we're going to make a rainbow with HTML `<div>` elements. And while
 Before we start, here's some basic info about HTML and CSS. Skip to [Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML and CSS.
 
 ## HTML Basics
-Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has its own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf) on HTML elements for guidance.
+Hyper Text Markup Language, or HTML, is a way to demarcate a document into different parts. Each part is _marked_ by elements (using tags). Each element has its own special connotation that the browser uses to _render_ the HTML document. Use this [cheat sheet](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf) on HTML elements for guidance.
 
 ### Elements
 - All begin with `<` and end with `>`, e.g., `<div>` (this last part is a tag).
