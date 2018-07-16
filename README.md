@@ -109,8 +109,8 @@ tells the browser where to find any other files it needs to display the page
 correctly, the `title` for the tab, and any other possible important
 information.
 
-Now if you refresh the `index.html` page in your browser you should see an ugly
-black rainbow.
+Now if you refresh the `index.html` page in your browser you should see a
+perfectly [Goth][goth] solid-black rainbow.
 
 We got the basic outline because in the `main.css` all the `div`
 elements were selected and styled, but the colors are wrong because the default
@@ -191,3 +191,4 @@ display all the colors on our completed HTML page.
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
 
 [cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+[goth]: https://en.wikipedia.org/wiki/Goth_subculture
