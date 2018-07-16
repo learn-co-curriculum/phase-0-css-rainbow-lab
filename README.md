@@ -84,10 +84,13 @@ Good job!
 
 ### Making the Divs Visible
 
-If you use the inspector or look at the file in your text editor, you'll see
-that the basic file structure is there. So why can't we see anything?
-That's because the divs have no styling on them right now. And that's because
-we never told the browser to include a CSS file that would apply any styles.
+If you look at the file in your text editor or use the inspector, you'll see
+that the basic HTML structure is present in `index.html`. So why can't we see
+anything?
+
+Well, `div`s are _structural_ elements. They're used to _invisibly_ group other
+visible elements together. But the stylesheet that would tell our `div`s to do
+something a little different hasn't been linked yet!
 
 Let's fix this by adding the stylesheet to the `head`:
 
