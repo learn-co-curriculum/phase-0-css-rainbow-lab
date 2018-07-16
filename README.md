@@ -112,20 +112,21 @@ information.
 Now if you refresh the `index.html` page in your browser you should see a
 perfectly [Goth][goth] solid-black rainbow.
 
-We got the basic outline because in the `main.css` all the `div`
-elements were selected and styled, but the colors are wrong because the default
-border color is black. To fix this we need to learn a little bit more about
-colors. While we could just set `color: red;` we will have more colors available
-if we define colors without words. Instead we can use a set of numbers with a
-base pair of 16 rather than a base pair of 10 like we use everyday. These
-numbers are called hexadecimals and we can use them to make a wide range of
-colors.
+We got the basic outline because in the `main.css` all the `div` elements were
+selected and given a `border` whose color is `#000`, "black." While we could
+set `color: red;`, we will have more colors available if we define colors
+without words.
+
+Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set
+of numbers with a base pair of 16 rather than a base pair of 10 like we use
+everyday. These numbers are called "hexadecimals" and we can use them to make a
+wide range of colors.
 
 #### Some Stuff You Should Know About Hex Colors (and Web Colors in General)
 
 Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of
-these numbers are actually letters. The lowest single digit number in hex is 0
-and the highest single digit number is f. This table might help to visualize
+these numbers are actually letters. The lowest single digit number in hex is `0`
+and the highest single digit number is `f`. This table might help to visualize
 what we mean by this.
 
 ```
