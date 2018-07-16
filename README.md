@@ -7,7 +7,7 @@ we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS, and importing stylesheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
-[Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML
+[Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
 and CSS.
 
 ## Review HTML Basics
@@ -84,10 +84,13 @@ Good job!
 
 ### Making the Divs Visible
 
-If you use the inspector or look at the file in your text editor, you'll see
-that the basic file structure is there. So why can't we see anything?
-That's because the divs have no styling on them right now. And that's because
-we never told the browser to include a CSS file that would apply any styles.
+If you look at the file in your text editor or use the inspector, you'll see
+that the basic HTML structure is present in `index.html`. So why can't we see
+anything?
+
+Well, `div`s are _structural_ elements. They're used to _invisibly_ group other
+visible elements together. But the stylesheet that would tell our `div`s to do
+something a little different hasn't been linked yet!
 
 Let's fix this by adding the stylesheet to the `head`:
 
@@ -106,23 +109,24 @@ tells the browser where to find any other files it needs to display the page
 correctly, the `title` for the tab, and any other possible important
 information.
 
-Now if you refresh the `index.html` page in your browser you should see an ugly
-black rainbow.
+Now if you refresh the `index.html` page in your browser you should see a
+perfectly [Goth][goth] solid-black rainbow.
 
-We got the basic outline because in the `main.css` all the `div`
-elements were selected and styled, but the colors are wrong because the default
-border color is black. To fix this we need to learn a little bit more about
-colors. While we could just set `color: red;` we will have more colors available
-if we define colors without words. Instead we can use a set of numbers with a
-base pair of 16 rather than a base pair of 10 like we use everyday. These
-numbers are called hexadecimals and we can use them to make a wide range of
-colors.
+We got the basic outline because in the `main.css` all the `div` elements were
+selected and given a `border` whose color is `#000`, "black." While we could
+set `color: red;`, we will have more colors available if we define colors
+without words.
+
+Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set
+of numbers with a base pair of 16 rather than a base pair of 10 like we use
+everyday. These numbers are called "hexadecimals" and we can use them to make a
+wide range of colors.
 
 #### Some Stuff You Should Know About Hex Colors (and Web Colors in General)
 
 Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of
-these numbers are actually letters. The lowest single digit number in hex is 0
-and the highest single digit number is f. This table might help to visualize
+these numbers are actually letters. The lowest single digit number in hex is `0`
+and the highest single digit number is `f`. This table might help to visualize
 what we mean by this.
 
 ```
@@ -188,3 +192,4 @@ display all the colors on our completed HTML page.
 <p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
 
 [cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+[goth]: https://en.wikipedia.org/wiki/Goth_subculture
