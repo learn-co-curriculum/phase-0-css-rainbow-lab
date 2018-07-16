@@ -7,7 +7,7 @@ we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS, and importing stylesheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
-[Making a Rainbow](#making-a-rainbow) if you feel comfortable enough with HTML
+[Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
 and CSS.
 
 ## Review HTML Basics
