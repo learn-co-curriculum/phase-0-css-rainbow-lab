@@ -15,7 +15,7 @@ and CSS.
 Hyper Text Markup Language, or HTML, is a way to structure a document with
 different parts. Each section of content is _marked_ by elements (using tags).
 Each element has its own special meaning that the browser uses to _render_ the
-HTML document. Use this [cheat sheet][] on HTML elements for guidance.
+HTML document. Use this [cheat sheet](https://htmlcheatsheet.com/) on HTML elements for guidance.
 
 ### Elements
 
@@ -174,8 +174,7 @@ and mark its color as red.
 
 To make sure the rainbow isn't so monochromatic you now need to repeat the
 above steps with the final six colors, and when you do you should
-have [a complete, colorful rainbow](http://i0.kym-
-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+have [a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
 ## Moving On
 
