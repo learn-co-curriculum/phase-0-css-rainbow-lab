@@ -1,10 +1,16 @@
 # My Little Rainbow
 
-## Problem Statement
+## Learning Goals
+
+- Review HTML basics
+- Review CSS basics
+- Make a CSS rainbow
+
+## Introduction
 
 In this lab, we're going to make a rainbow with HTML `<div>` elements. And while
 we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
-how color works in CSS, and importing stylesheets.
+how color works in CSS and importing stylesheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
 [Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
@@ -23,7 +29,7 @@ HTML document. Use this [cheat sheet](https://htmlcheatsheet.com/) on HTML eleme
 - Most have an opening tag such as `<div>` and a closing tag `</div>`.
   + The `/` indicates to the browser that that tag is a closing tag.
   + The element is everything between the tags and the tags themselves.
-- Some tags are self closing like the line break element `<br>`.
+- Some tags are self-closing like the line break element `<br>`.
 - Elements can have IDs and classes to aid the browser in finding specific tags.
   + Must begin with a letter A-Z or a-z.
   + Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`).
@@ -33,7 +39,7 @@ HTML document. Use this [cheat sheet](https://htmlcheatsheet.com/) on HTML eleme
   + Children inherit attributes from their parents.
   + Don't nest everything.
 - Elements next to one another are siblings.
-  + Siblings do not inherit from one another, but are important for selecting in CSS.
+  + Siblings do not inherit from one another but are important for selecting in CSS.
 
 Here is an example of element relations:
 
@@ -71,9 +77,9 @@ Here's an example of CSS styling:
 }  /* all elements will have red font */
 ```
 
-## Make a Rainbow
+## Make a CSS Rainbow
 
-In the directory you'll see three files: `index.html`, `main.css`, and this
+In the directory, you'll see three files: `index.html`, `main.css`, and this
 file, `README.md`. Start the web server using the `httpserver` command.  Using
 another tab in your browser, navigate to the "launched" web server and add
 `/index.html`. The URL should be something like `10.0.0.1:41234/index.html`.
@@ -119,10 +125,10 @@ without words.
 
 Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set
 of numbers with a base pair of 16 rather than a base pair of 10 like we use
-everyday. These numbers are called "hexadecimals" and we can use them to make a
+every day. These numbers are called "hexadecimal" and we can use them to make a
 wide range of colors.
 
-#### Some Stuff You Should Know About Hex Colors (and Web Colors in General)
+### Some Stuff You Should Know About Hex Colors (and Web Colors in General)
 
 Hex colors begin with `#` and are followed by, generally, 6 numbers, but some of
 these numbers are actually letters. The lowest single digit number in hex is `0`
@@ -145,7 +151,7 @@ maximum of each of the colors.
 Hex colors can be shortened to just three numbers when each RGB value is the
 same for each digit. So `#11dd99` can be written as `#1d9`.
 
-#### Coloring the Rainbow
+### Coloring the Rainbow
 
 To get ROYGBIV onto our rainbow we'll need seven hex colors. Red:
 `#f00`; Orange: `#ffa500`; Yellow: `#ff0`; Green: `#00bc3f`; Blue: `#06f`;
@@ -153,7 +159,7 @@ Indigo: `#8a2be2`; Violet: `#d300c9`
 
 All we have to do next is select each div individually and apply each of those
 colors. That is a perfect use for ids since they're meant to style one specific
-element only. We need to add an id for each div, so a logical name for each div
+element only. We need to add an id for each div so a logical name for each div
 would be the color that they have to be. It could be something random, but good
 names make for semantic code. So let's give the outermost div the id red.
 
@@ -187,8 +193,6 @@ After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
 We linked our stylesheet to our HTML page and added ids to our HTML elements. We
 then created CSS rules, using hexadecimal color values, for those elements to
 display all the colors on our completed HTML page.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/my-little-rainbow'>My Little Rainbow</a> on Learn.co and start learning to code for free.</p>
 
 [cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
 [goth]: https://en.wikipedia.org/wiki/Goth_subculture
