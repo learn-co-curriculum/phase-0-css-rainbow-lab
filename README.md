@@ -4,7 +4,7 @@
 
 - Review HTML basics
 - Review CSS basics
-- Make a CSS rainbow
+- Specify hexadecimal color values with CSS
 
 ## Introduction
 
