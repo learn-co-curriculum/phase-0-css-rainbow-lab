@@ -10,7 +10,7 @@
 
 In this lab, we're going to make a rainbow with HTML `<div>` elements. And while
 we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
-how color works in CSS and importing stylesheets.
+how color works in CSS and importing style sheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
 [Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
