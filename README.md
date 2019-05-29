@@ -95,10 +95,10 @@ that the basic HTML structure is present in `index.html`. So why can't we see
 anything?
 
 Well, `div`s are _structural_ elements. They're used to _invisibly_ group other
-visible elements together. But the stylesheet that would tell our `div`s to do
+visible elements together. But the style sheet that would tell our `div`s to do
 something a little different hasn't been linked yet!
 
-Let's fix this by adding the stylesheet to the `head`:
+Let's fix this by adding the style sheet to the `head`:
 
 ```html
 <head>
@@ -190,7 +190,7 @@ the tests. Once they pass, type `learn submit` and you'll be ready to move on!
 ## Conclusion
 
 After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
-We linked our stylesheet to our HTML page and added ids to our HTML elements. We
+We linked our style sheet to our HTML page and added ids to our HTML elements. We
 then created CSS rules, using hexadecimal color values, for those elements to
 display all the colors on our completed HTML page.
 
