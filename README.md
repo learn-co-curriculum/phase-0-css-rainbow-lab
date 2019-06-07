@@ -196,3 +196,4 @@ display all the colors on our completed HTML page.
 
 [cheat sheet]: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
 [goth]: https://en.wikipedia.org/wiki/Goth_subculture
+
