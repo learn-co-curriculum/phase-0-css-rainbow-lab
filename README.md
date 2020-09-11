@@ -184,7 +184,7 @@ have [a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original
 
 ## Moving On
 
-When you're done with this lab type `learn` at the terminal. Make sure you pass
+When you're done with this lab type `learn test` at the terminal. Make sure you pass
 the tests. Once they pass, type `learn submit` and you'll be ready to move on!
 
 ## Conclusion
