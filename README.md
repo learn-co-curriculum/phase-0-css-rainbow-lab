@@ -16,6 +16,13 @@ Before we start, here's some basic info about HTML and CSS. Skip to
 [Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
 and CSS.
 
+## Getting Started
+
+Fork and clone this lesson into your local environment. Navigate into its directory
+in the terminal, then run `code .` to open the files in Visual Studio Code. Finally,
+run `bundle` to install the lab's dependencies. Run `rspec` as you work to see your
+test progress.
+
 ## Review HTML Basics
 
 Hyper Text Markup Language, or HTML, is a way to structure a document with
@@ -182,8 +189,7 @@ have [a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original
 
 ## Moving On
 
-When you're done with this lab type `learn test` at the terminal. Make sure you pass
-the tests. Once they pass, type `learn submit` and you'll be ready to move on!
+When you're done with this lab type `rspec` to confirm you've passed all the tests.
 
 ## Conclusion
 
