@@ -13,47 +13,51 @@ we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS and importing style sheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
-[Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
-and CSS.
+[Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML and
+CSS.
 
 ## Getting Started
 
-Fork and clone this lesson into your local environment. Navigate into its directory
-in the terminal, then run `code .` to open the files in Visual Studio Code. Finally,
-run `bundle` to install the lab's dependencies. Run `rspec` as you work to see your
-test progress.
+Fork and clone this lesson into your local environment. Navigate into its
+directory in the terminal, then run `code .` to open the files in Visual Studio
+Code. Finally, run `bundle` to install the lab's dependencies. Run `rspec` as
+you work to see your test progress.
 
 ## Review HTML Basics
 
 Hyper Text Markup Language, or HTML, is a way to structure a document with
 different parts. Each section of content is _marked_ by elements (using tags).
 Each element has its own special meaning that the browser uses to _render_ the
-HTML document. Use this [cheat sheet](https://htmlcheatsheet.com/) on HTML elements for guidance.
+HTML document. Use this [cheat sheet](https://htmlcheatsheet.com/) on HTML
+elements for guidance.
 
 ### Elements
 
 - All begin with `<` and end with `>`, e.g., `<div>` (this last part is a tag).
 - Most have an opening tag such as `<div>` and a closing tag `</div>`.
-  + The `/` indicates to the browser that that tag is a closing tag.
-  + The element is everything between the tags and the tags themselves.
+  - The `/` indicates to the browser that that tag is a closing tag.
+  - The element is everything between the tags and the tags themselves.
 - Some tags are self-closing like the line break element `<br>`.
 - Elements can have IDs and classes to aid the browser in finding specific tags.
-  + Must begin with a letter A-Z or a-z.
-  + Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`).
-  + IDs **can** only be used once per page. E.g.: `<div id="this-special-div"></div>`.
-  + Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
+  - Must begin with a letter A-Z or a-z.
+  - Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`).
+  - IDs **can** only be used once per page. E.g.: `<div id="this-special-div"></div>`.
+  - Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
-  + Children inherit attributes from their parents.
-  + Don't nest everything.
+  - Children inherit attributes from their parents.
+  - Don't nest everything.
 - Elements next to one another are siblings.
-  + Siblings do not inherit from one another but are important for selecting in CSS.
+  - Siblings do not inherit from one another but are important for selecting in CSS.
 
 Here is an example of element relations:
 
 ```html
-<div>  <!-- the parent element -->
-  <p></p>  <!-- the first sibling element/the first child-->
-  <p></p>  <!-- the second sibling element/the second child -->
+<div>
+  <!-- the parent element -->
+  <p></p>
+  <!-- the first sibling element/the first child-->
+  <p></p>
+  <!-- the second sibling element/the second child -->
 </div>
 ```
 
@@ -68,23 +72,23 @@ information appear clear and engaging.
 
 ### CSS selectors
 
-  - They select elements to assign them styles.
-  - `*` (wildcard) selects every element.
-  - An element, such as `div`, will select all elements of that type.
-  - They select an id like `#some-id`
-  - Classes are selected like this `.some-class`
-  - To select all children elements of a parent do something like this `div p`
-  - To select multiple different elements separate them by commas like this `div, p, a`
+- They select elements to assign them styles.
+- `*` (wildcard) selects every element.
+- An element, such as `div`, will select all elements of that type.
+- They select an id like `#some-id`
+- Classes are selected like this `.some-class`
+- To select all children elements of a parent do something like this `div p`
+- To select multiple different elements separate them by commas like this `div, p, a`
 
 Here's an example of CSS styling:
 
 ```css
 * {
-  color: red;  /* color in CSS refers to font color */
-}  /* all elements will have red font */
+  color: red; /* color in CSS refers to font color */
+} /* all elements will have red font */
 ```
 
-## Make a CSS Rainbow
+## Make a CSS Rainbow <a href="#make-a-rainbow"></a>
 
 In the directory, you'll see three files: `index.html`, `main.css`, and this
 file, `README.md`. Open `index.html` (or run `httpserver` if using the Learn IDE).
@@ -107,9 +111,9 @@ Let's fix this by adding the style sheet to the `head`:
 
 ```html
 <head>
-...
-  <link rel="stylesheet" type="text/css" href="main.css">
-...
+  ...
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  ...
 </head>
 ```
 
@@ -124,14 +128,14 @@ Now if you refresh the `index.html` page in your browser you should see a
 perfectly [Goth][goth] solid-black rainbow.
 
 We got the basic outline because in the `main.css` all the `div` elements were
-selected and given a `border` whose color is `#000`, "black." While we could
-set `color: red;`, we will have more colors available if we define colors
-without words.
+selected and given a `border` whose color is `#000`, "black." While we could set
+`color: red;`, we will have more colors available if we define colors without
+words.
 
-Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set
-of numbers with a base pair of 16 rather than a base pair of 10 like we use
-every day. These numbers are called "hexadecimal" and we can use them to make a
-wide range of colors.
+Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set of
+numbers with a base pair of 16 rather than a base pair of 10 like we use every
+day. These numbers are called "hexadecimal" and we can use them to make a wide
+range of colors.
 
 ### Some Stuff You Should Know About Hex Colors (and Web Colors in General)
 
@@ -140,7 +144,7 @@ these numbers are actually letters. The lowest single digit number in hex is `0`
 and the highest single digit number is `f`. This table might help to visualize
 what we mean by this.
 
-```
+```txt
 Decimal Numbers:      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9,  a,  b,  c,  d,  e,  f, 10
 ```
@@ -148,10 +152,10 @@ Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9,  a,  b,  c,  d,  e,  f, 10
 Hex colors work by creating Red, Green, Blue (RGB) values. Traditional RGB
 colors are on a scale of 0 to 255 for each of the three colors in the spectrum.
 Hex colors are considered true colors since they can represent ~16 million
-colors—but your eye can only see 10 million of those. So `#000000` translates
-to black since 0 reds, 0 green, 0 blues represents the absence of all colors,
-and `#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the
-maximum of each of the colors.
+colors—but your eye can only see 10 million of those. So `#000000` translates to
+black since 0 reds, 0 green, 0 blues represents the absence of all colors, and
+`#ffffff` makes white since 255 reds, 255 greens, and 255 blues is the maximum
+of each of the colors.
 
 Hex colors can be shortened to just three numbers when each RGB value is the
 same for each digit. So `#11dd99` can be written as `#1d9`.
@@ -169,34 +173,34 @@ would be the color that they have to be. It could be something random, but good
 names make for semantic code. So let's give the outermost div the id red.
 
 ```html
-<div id="red">
-  ...
-</div>
+<div id="red">...</div>
 ```
 
-To give that id some CSS attributes we'll go into `main.css`, select the id,
-and mark its color as red.
+To give that id some CSS attributes we'll go into `main.css`, select the id, and
+mark its color as red.
 
 ```css
-#red { /* this selects any elements with the red id */
+#red {
+  /* this selects any elements with the red id */
   border-top-color: #f00;
 }
 ```
 
-To make sure the rainbow isn't so monochromatic you now need to repeat the
-above steps with the final six colors, and when you do you should
-have [a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+To make sure the rainbow isn't so monochromatic you now need to repeat the above
+steps with the final six colors, and when you do you should have
+[a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
 
 ## Moving On
 
-When you're done with this lab type `rspec` to confirm you've passed all the tests.
+When you're done with this lab type `rspec` to confirm you've passed all the
+tests.
 
 ## Saving Your Work Remotely
 
 Currently, the work you've done on this assignment is only on your local
 machine. To preserve work on your GitHub fork, you will need to stage the
-changes you've made, commit them, and push the commit up to GitHub. Use
-the following commands to do this:
+changes you've made, commit them, and push the commit up to GitHub. Use the
+following commands to do this:
 
 ```sh
 git add .
@@ -209,8 +213,8 @@ recent commit, and your solution will be present in the files.
 
 ## Conclusion
 
-After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow.
-We linked our style sheet to our HTML page and added ids to our HTML elements. We
+After we reviewed HTML and CSS basics, we moved on to create an HTML rainbow. We
+linked our style sheet to our HTML page and added ids to our HTML elements. We
 then created CSS rules, using hexadecimal color values, for those elements to
 display all the colors on our completed HTML page.
 
