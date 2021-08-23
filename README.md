@@ -40,14 +40,17 @@ elements for guidance.
 - Some tags are self-closing like the line break element `<br>`.
 - Elements can have IDs and classes to aid the browser in finding specific tags.
   - Must begin with a letter A-Z or a-z.
-  - Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`).
+  - Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and
+    underscores (`_`).
   - IDs **can** only be used once per page. E.g.: `<div id="this-special-div"></div>`.
-  - Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
+  - Classes can be used as many times as you want. E.g.:
+    `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
   - Children inherit attributes from their parents.
   - Don't nest everything.
 - Elements next to one another are siblings.
-  - Siblings do not inherit from one another but are important for selecting in CSS.
+  - Siblings do not inherit from one another but are important for selecting in
+    CSS.
 
 Here is an example of element relations:
 
@@ -78,7 +81,8 @@ information appear clear and engaging.
 - They select an id like `#some-id`
 - Classes are selected like this `.some-class`
 - To select all children elements of a parent do something like this `div p`
-- To select multiple different elements separate them by commas like this `div, p, a`
+- To select multiple different elements separate them by commas like this
+  `div, p, a`
 
 Here's an example of CSS styling:
 
@@ -91,7 +95,7 @@ Here's an example of CSS styling:
 ## Make a CSS Rainbow <a href="#make-a-rainbow"></a>
 
 In the directory, you'll see three files: `index.html`, `main.css`, and this
-file, `README.md`. Open `index.html` (or run `httpserver` if using the Learn IDE).
+file, `README.md`. Open `index.html`.
 
 If everything is working correctly, you should see a white page.
 
@@ -202,10 +206,10 @@ machine. To preserve work on your GitHub fork, you will need to stage the
 changes you've made, commit them, and push the commit up to GitHub. Use the
 following commands to do this:
 
-```sh
-git add .
-git commit -m "Completed assignment"
-git push
+```console
+$ git add .
+$ git commit -m "Completed assignment"
+$ git push
 ```
 
 If you visit your fork on GitHub, you should now see that _you've_ made the most
