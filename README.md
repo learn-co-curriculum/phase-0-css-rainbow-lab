@@ -20,8 +20,8 @@ CSS.
 
 Fork and clone this lesson into your local environment. Navigate into its
 directory in the terminal, then run `code .` to open the files in Visual Studio
-Code. Finally, run `bundle` to install the lab's dependencies. Run `rspec` as
-you work to see your test progress.
+Code. Finally, run `npm install` to install the lab's dependencies. Run
+`npm test` as you work to see your test progress.
 
 ## Review HTML Basics
 
@@ -42,7 +42,8 @@ elements for guidance.
   - Must begin with a letter A-Z or a-z.
   - Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and
     underscores (`_`).
-  - IDs **can** only be used once per page. E.g.: `<div id="this-special-div"></div>`.
+  - IDs **can** only be used once per page. E.g.:
+    `<div id="this-special-div"></div>`.
   - Classes can be used as many times as you want. E.g.:
     `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
@@ -166,9 +167,9 @@ same for each digit. So `#11dd99` can be written as `#1d9`.
 
 ### Coloring the Rainbow
 
-To get ROYGBIV onto our rainbow we'll need seven hex colors. Red:
-`#f00`; Orange: `#ffa500`; Yellow: `#ff0`; Green: `#00bc3f`; Blue: `#06f`;
-Indigo: `#8a2be2`; Violet: `#d300c9`
+To get ROYGBIV onto our rainbow we'll need seven hex colors. Red: `#f00`;
+Orange: `#ffa500`; Yellow: `#ff0`; Green: `#00bc3f`; Blue: `#06f`; Indigo:
+`#8a2be2`; Violet: `#d300c9`
 
 All we have to do next is select each div individually and apply each of those
 colors. That is a perfect use for ids since they're meant to style one specific
@@ -196,7 +197,7 @@ steps with the final six colors, and when you do you should have
 
 ## Moving On
 
-When you're done with this lab type `rspec` to confirm you've passed all the
+When you're done with this lab type `npm test` to confirm you've passed all the
 tests.
 
 ## Saving Your Work Remotely
