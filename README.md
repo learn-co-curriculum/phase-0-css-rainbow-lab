@@ -116,26 +116,25 @@ Let's fix this by adding the style sheet to the `head`:
 
 ```html
 <head>
-  ...
-  <link rel="stylesheet" type="text/css" href="main.css" />
-  ...
+  <title>My Little Rainbow</title>
+  <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 ```
 
 `Link` is a self-closing tag that will create a relative path with the `href`
-attribute. A relative path means the browser knows that the `main.css` file is
-in the same place as `index.html`. The `head` is a hidden part of the page that
-tells the browser where to find any other files it needs to display the page
-correctly, the `title` for the tab, and any other possible important
-information.
+attribute. A relative path `./main.css` means the browser knows that the
+`main.css` file is in the same place as `index.html`. The `head` is a hidden
+part of the page that tells the browser where to find any other files it needs
+to display the page correctly, the `title` for the tab, and any other possible
+important information.
 
 Now if you refresh the `index.html` page in your browser you should see a
 perfectly [Goth][goth] solid-black rainbow.
 
 We got the basic outline because in the `main.css` all the `div` elements were
 selected and given a `border` whose color is `#000`, "black." While we could set
-`color: red;`, we will have more colors available if we define colors without
-words.
+`border-top-color: red;`, we will have more colors available if we define colors
+without words.
 
 Instead of `red`, `green`, or the exotic `tomato`, professionals prefer a set of
 numbers with a base pair of 16 rather than a base pair of 10 like we use every
