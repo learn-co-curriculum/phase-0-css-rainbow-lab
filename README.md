@@ -129,7 +129,7 @@ to display the page correctly, the `title` for the tab, and any other possible
 important information.
 
 Now if you refresh the `index.html` page in your browser you should see a
-perfectly [Goth][goth] solid-black rainbow.
+perfectly solid-black rainbow.
 
 We got the basic outline because in the `main.css` all the `div` elements were
 selected and given a `border` whose color is `#000`, "black." While we could set
@@ -191,8 +191,8 @@ mark its color as red.
 ```
 
 To make sure the rainbow isn't so monochromatic you now need to repeat the above
-steps with the final six colors, and when you do you should have
-[a complete, colorful rainbow](http://i0.kym-cdn.com/photos/images/original/000/118/087/2468904593_6a7c692ab6.jpg).
+steps with the final six colors, and when you do you should have a complete,
+colorful rainbow.
 
 ## Moving On
 
