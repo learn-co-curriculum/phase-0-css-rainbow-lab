@@ -13,8 +13,8 @@ we do it we're going to learn about HTML elements, CSS styling, CSS selectors,
 how color works in CSS and importing style sheets.
 
 Before we start, here's some basic info about HTML and CSS. Skip to
-[Make a Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML and
-CSS.
+[Make a CSS Rainbow](#make-a-rainbow) if you feel comfortable enough with HTML
+and CSS.
 
 ## Getting Started
 
@@ -92,7 +92,7 @@ Here's an example of CSS styling:
 } /* all elements will have red font */
 ```
 
-## Make a CSS Rainbow <a href="#make-a-rainbow"></a>
+## <a id="make-a-rainbow"></a> Make a CSS Rainbow 
 
 In the directory, you'll see three files: `index.html`, `main.css`, and this
 file, `README.md`. Open `index.html`.
