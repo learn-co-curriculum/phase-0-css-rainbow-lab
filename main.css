@@ -1,11 +1,32 @@
-div {
-  border: 20px solid #000; /* this is short hand for setting
-                            the border's width, its type, and color */
-  display: inline-block; /* a way of positioning elements */
-  min-width: 20em; /* the two min styles make the shape */
-  min-height: 25em; /* of the divs oblong*/
-  border-radius: 50%; /* this makes the normally square div round */
-  border-left-color: transparent; /* these remove the color from the left side */
-  border-right-color: transparent; /* the right side */
-  border-bottom-color: transparent; /* and the bottom of the circle */
-}
+div { }
+  #red {
+    /* this selects any elements with the red id */
+    border-top-color: #f00;
+  }
+
+  #orange {
+    /* this selects any elements with the red id */
+    border-top-color: #ffa500;
+  }
+  #yellow {
+    /* this selects any elements with the red id */
+    border-top-color: #ff0;
+  }
+  #green {
+    /* this selects any elements with the red id */
+    border-top-color: #00bc3f;
+  }
+  #blue {
+    /* this selects any elements with the red id */
+    border-top-color: #06f;
+  }
+  #indigo {
+    /* this selects any elements with the red id */
+    border-top-color: #8a2be2;
+  }
+  #violet {
+    /* this selects any elements with the red id */
+    border-top-color: #d300c9;
+  }
+
+
