@@ -18,9 +18,9 @@ and CSS.
 
 ## Getting Started
 
-Fork and clone this lesson into your local environment. Navigate into its
+**Fork and clone** this lesson into your local environment. Navigate into its
 directory in the terminal, then run `code .` to open the files in Visual Studio
-Code. Run `learn test` as you work to see your test progress.
+Code. Run `npm test` as you work to see your test progress.
 
 ## Review HTML Basics
 
@@ -195,7 +195,7 @@ colorful rainbow.
 
 ## Moving On
 
-When you're done with this lab type `learn test` to confirm you've passed all the
+When you're done with this lab type `npm test` to confirm you've passed all the
 tests.
 
 ## Conclusion
